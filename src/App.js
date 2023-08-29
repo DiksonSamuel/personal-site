@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header';
+import Intro from './components/intro';
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='flex-1'>
+      {/* <Header /> */}
+      <section id="section1" className="justify-center items-center flex h-screen">
+        <Intro/>
+      </section>
+
+      {/* <section id="section2" className="justify-center items-center flex h-screen">
+        <h2>Section 2</h2>
+      </section>
+
+      <section id="section3" className="justify-center items-center flex h-screen">
+        <h2>Section 3</h2>
+      </section> */}
     </div>
-  );
+  )
 }
 
 export default App;
