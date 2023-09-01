@@ -15,10 +15,6 @@ const Intro = () => {
               .start();
           }}
         />
-        {/* <h1 className="text-white text-4xl font-roboto min-w-screen font-bold">
-          {Strings.introLine1}<br></br>
-          {Strings.introLine2}
-        </h1> */}
         <div className="paragragh-xl text-[25px] py-5 font-roboto text-white">
           {Strings.introPara1}
         </div>
