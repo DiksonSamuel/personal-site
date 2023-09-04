@@ -13,7 +13,7 @@ const About = () => {
           <div className="flex flex-row px-10">
             <div className="w-2/3 border-r-2 border-grey">
               <h2 className="font-roboto text-white text-4xl">{Strings.whyHelloThere}</h2>
-              <p className="font-roboto text-white pt-[10px] w-3/4">
+              <p className="font-roboto text-white pt-[10px] w-3/4 whitespace-pre-wrap">
                 {Strings.aboutPara}
               </p>
             </div>
