@@ -9,6 +9,7 @@ module.exports = {
       gradientColorStops: theme => ({
         'purple-1': "#cc2b5e",
         'purple-2': "#753a88",
+        'gray-border': 'D9DDDC'
       }),
       
     },

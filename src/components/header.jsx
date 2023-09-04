@@ -3,31 +3,15 @@ import Strings from "../utils/strings";
 
 const Header = () => {
 
-  const [isSticky, setIsSticky] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
 
   return (
-    <header className="sticky-header bg-gradient-to-r from-purple-1 from-opacity-70 to-purple-2 via-opacity-70" >
+    <header className="sticky-header bg-gradient-to-r from-purple-1 from-opacity-70 to-purple-2 via-opacity-70 flex flex-row px-5 items-center justify-between" >
+      <img src={require('../assets/logo.PNG')} className="h-12 w-12" />
       <nav >
-        <ul >
-          <li ><a className="text-white font-roboto" href="#section1" >{Strings.home}</a></li>
-          <li><a className="text-white" href="#section2">{Strings.work}</a></li>
-          <li><a className="text-white" href="#section3">{Strings.contact}</a></li>
+        <ul className="flex items-center justify-content">
+          <li><a className="text-white font-roboto mr-[20px]" href="#section2">{Strings.work}</a></li>
+          <li><a className="text-white font-roboto mr-[20px]" href="#section3">{Strings.contact}</a></li>
         </ul>
       </nav>
     </header>
