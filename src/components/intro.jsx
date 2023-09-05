@@ -5,8 +5,8 @@ import Typewriter from 'typewriter-effect';
 
 const Intro = () => {
   return (
-    <div className="">
-      <div className="whitespace-pre-wrap text-white text-4xl font-roboto min-w-screen font-bold justify-center items-center flex-col mt-40 mx-[10px] md:mx-[40px] flex-wrap md:w-1/2">
+    <div  className="flex flex-1 self-center items-center ">
+      <div className="whitespace-pre-wrap text-white text-4xl font-roboto min-w-screen font-bold justify-center items-center flex-col mx-[10px] md:mx-[40px] flex-wrap md:w-1/2">
         <Typewriter
 
           onInit={(typewriter) => {

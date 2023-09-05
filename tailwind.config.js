@@ -24,5 +24,8 @@ module.exports = {
   plugins: [
     require('tailwindcss-gradients'),
   ],
+  corePlugins: {
+    transform: true, // Enable transform utilities
+  },
 }
 

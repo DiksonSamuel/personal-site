@@ -5,10 +5,10 @@ import RouterPath from './path';
 
 const MainRouter = () => {
   return (
-    <Router>
+    <Router basename='/personal-site'>
       <Routes>
-        <Route path={RouterPath.landing} element={<Landing />} />
-        <Route path={RouterPath.about} element={<About />} />
+        <Route exact path={RouterPath.landing} element={<Landing />} />
+        <Route exact path={RouterPath.about} element={<About />} />
       </Routes>
     </Router>
   )

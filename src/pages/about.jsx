@@ -2,6 +2,7 @@ import React from "react";
 import Strings from "../utils/strings";
 import Header from "../components/header";
 import AboutConfig from "../config/aboutConfig";
+import Contact from "../components/contact";
 
 const About = () => {
 
@@ -13,7 +14,7 @@ const About = () => {
     return (
       <div
         key={index}
-        className={"md:w-1/3 mx-10 md:mx-0 p-4 border-gray-300 border-b " + borderRL + " " + borderB}
+        className={"text-center md:w-1/3 mx-10 md:mx-0 p-4 border-gray-300 border-b " + borderRL + " " + borderB}
       >
         <p className="font-roboto font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">{item.key}</p>
         <p>{item.value}</p>
@@ -41,10 +42,13 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section id="section1" className="w-full h-3/4 bg-white min-w-screen">
+      <section id="section2" className="w-full h-3/4 bg-white min-w-screen">
         <div className="flex flex-wrap flex-col md:flex-row md:px-10 py-[50px]">
           {AboutConfig.map((item, index) => renderGridItem(item, index))}
         </div>
+      </section>
+      <section id="section3" className="">
+        <Contact/>
       </section>
     </div>
   )
