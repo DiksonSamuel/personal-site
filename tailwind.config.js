@@ -2,27 +2,30 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
+   
     extend: {
       fontFamily: {
-        roboto: ['Roboto', 'sans-serif'],
+        roboto: ['Roboto'],
       },
-      gradientColorStops: theme => ({
-        'purple-1': "#cc2b5e",
-        'purple-2': "#753a88",
-        'gray-border': 'D9DDDC'
-      }),
-      
-    },
-    theme: {
+      // gradientColorStops: theme => ({
+      //   'purple-1': "#cc2b5e",
+      //   'purple-2': "#753a88"
+      // }),
       colors: {
-        "primary-theme-color": "#1c1b1c",
-        "white": "#EFEBE0",
+        'primary-theme-color': "#1c1b1c",
+        'white': "#EFEBE0",
+        'gray-border': '#D9DDDC',
+        'purple-1': "#cc2b5e",
+        'purple-2': "#753a88"
       },
-     
-    }
+
+    },
+    
+
   },
   plugins: [
     require('tailwindcss-gradients'),
+    require('@tailwindcss/line-clamp'),
   ],
   corePlugins: {
     transform: true, // Enable transform utilities

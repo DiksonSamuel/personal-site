@@ -14,14 +14,14 @@ const Projects = ({ data }) => {
         <div className={'flex flex-col md:flex-row justify-center items-center my-5 ' + reverse}>
           <div className='flex-col-reverse md:flex-row flex borderb-0 md:border-b-2 border-gray-border px-10' key={index} >
             <div className='border-r-0 md:border-r-2 border-gray-border py-10'>
-              <h3 class="font-roboto font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">{project.name}</h3>
+              <h3 class="text-transparent font-roboto font-extrabold text-4xl bg-clip-text bg-gradient-to-r from-purple-1 to-purple-2">{project.name}</h3>
               <p class="font-roboto">{project.description}</p>
             </div>
             <div className='self-center rounded-full border-2 border-gray-border h-5 w-5 justify-center items-center flex mx-0 md:mx-5 px-3 py-3'>
               <p className='font-roboto'>{project.id}</p>
             </div>
           </div>
-          <img src={project.image} alt={project.name} className={'mx-auto my-auto ' + imagemargin + ' ' + imageSize} />
+          <img  src={project.image} alt={project.name} className={'shadow-md rounded-lg mx-auto  my-auto ' + imagemargin + ' ' + imageSize} />
         </div>
       </div>
 

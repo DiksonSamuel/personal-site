@@ -16,7 +16,7 @@ const About = () => {
         key={index}
         className={"text-center md:w-1/3 mx-10 md:mx-0 p-4 border-gray-300 border-b " + borderRL + " " + borderB}
       >
-        <p className="font-roboto font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">{item.key}</p>
+        <p className="font-roboto font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-purple-1 to-purple-2">{item.key}</p>
         <p>{item.value}</p>
       </div>
     )
@@ -24,8 +24,6 @@ const About = () => {
 
   return (
     <div className="flex flex-col">
-
-
       <section id="section1" className="w-full md:h-screen bg-gradient-to-r from-purple-1 to-purple-2 min-w-screen">
         <div className='md:min-h-screen flex-col flex flex-1'>
           <Header />
@@ -42,7 +40,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section id="section2" className="w-full h-3/4 bg-white min-w-screen">
+      <section id="section2" className="w-full h-3/4 min-w-screen">
         <div className="flex flex-wrap flex-col md:flex-row md:px-10 py-[50px]">
           {AboutConfig.map((item, index) => renderGridItem(item, index))}
         </div>

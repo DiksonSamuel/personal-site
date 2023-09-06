@@ -1,24 +1,38 @@
 @import './styles/tailwind.css';
 @import './utils/colors.css';
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-nav a {
+/* nav a {
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s;
-}
+} */
 
-nav a:hover {
+/* nav a:hover {
   color: purple;
-}
+} */
 
 .tansition-class {
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   opacity: 1;
+}
+
+
+.pointer {
+  position: absolute;
+  bottom: -5px; /* Adjust the distance below the navigation */
+  left: 50%; /* Center the pointer horizontally */
+  transform: translateX(-50%);
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 8px 8px; /* Adjust the size of the pointer */
+  border-color: transparent transparent #007bff transparent; /* Adjust the color */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navigation:hover .pointer {
+  opacity: 1; /* Show the pointer on hover */
 }
