@@ -3,8 +3,8 @@ const AboutConfig = [
   {key: "Currently", value: "Senior Software Engineer at Sify Technologies Ltd"},
   {key: "Experience", value: "7 years"},
   {key: "Loves", value: "Cricket, Badminton, Football"},
-  {key: "Super power", value: "I can sleep anywhere, anytime"},
-  {key: "Sprit aminal", value: "Cheetah"},
+  {key: "Super power", value: "Master of Office Coffee Brewing"},
+  {key: "Spirit aminal", value: "Cheetah"},
 ]
 
 export default AboutConfig;

@@ -1,6 +1,7 @@
 import React from "react";
 import Strings from "../utils/strings";
 import { CallOutlined, EmailOutlined, Facebook, GitHub, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
+import Redirects from "../config/redirects";
 
 const Contact = () => {
   return (
@@ -17,19 +18,19 @@ const Contact = () => {
           <p className="ml-2.5">{Strings.number}</p>
         </div>
         <div className="text-white text-sm my-[10px]">
-          <a href="" target="_blank" className="pr-[24px]">
+          <a href={Redirects.linkedin} target="_blank" className="pr-[24px]">
             <LinkedIn />
           </a>
-          <a href="" target="_blank" className="pr-[24px]">
+          <a href={Redirects.twitter} target="_blank" className="pr-[24px]">
             <Twitter />
           </a>
-          <a href="" target="_blank" className="pr-[24px]">
+          <a href={Redirects.github} target="_blank" className="pr-[24px]">
             <GitHub />
           </a>
-          <a href="" target="_blank" className="pr-[24px]">
+          <a href={Redirects.instagram} target="_blank" className="pr-[24px]">
             <Instagram />
           </a>
-          <a href="" target="_blank" className="pr-[24px]">
+          <a href={Redirects.facebook} target="_blank" className="pr-[24px]">
             <Facebook />
           </a>
         </div>

@@ -4,7 +4,7 @@ import Strings from "../utils/strings";
 const Header = () => {
 
   return (
-    <header className="flex flex-row px-5 items-center justify-between" >
+    <header className="flex flex-row px-[18px] md:px-[25px] items-center justify-between" >
       <a href="/personal-site" >
         <img src={require('../assets/logo.PNG')} className="h-12 w-12" />
       </a>

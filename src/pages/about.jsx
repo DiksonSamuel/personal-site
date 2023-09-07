@@ -27,15 +27,15 @@ const About = () => {
       <section id="section1" className="w-full md:h-screen bg-gradient-to-r from-purple-1 to-purple-2 min-w-screen">
         <div className='md:min-h-screen flex-col flex flex-1'>
           <Header />
-          <div className="flex flex-col md:flex-row px-10 md:items-center md:justify-center flex-1 transition ease-in-out delay-1500 py-10">
+          <div className="flex flex-col md:flex-row px-[25px] md:items-center md:justify-center flex-1 transition ease-in-out delay-1500 py-10">
             <div className="md:w-2/3 border-r-0 md:border-r-2 border-grey">
               <h2 className="font-roboto text-white text-4xl">{Strings.whyHelloThere}</h2>
-              <p className="font-roboto text-white pt-[10px] md:w-3/4 whitespace-pre-wrap">
+              <p className="font-roboto text-white pt-[10px] md:w-3/4 whitespace-pre-wrap text-xl">
                 {Strings.aboutPara}
               </p>
             </div>
-            <div className="self-center bg-white p-[2.5px] md:p-[10px] rounded-full w-32 md:w-auto md:rounded-md drop-shadow-md ml-0 md:ml-10">
-              <img src={require('../assets/me.jpg')} className="h-32 w-32 md:w-auto rounded-full md:rounded md:h-96" />
+            <div className="self-center bg-white p-[2.5px] md:p-[10px] rounded-full w-32 md:w-auto md:rounded-md drop-shadow-md ml-0 md:ml-10 mt-[20px] md:mt-[0px]">
+              <img src={require('../assets/me2.JPG')} className="object-cover h-32 w-32 md:w-auto rounded-full md:rounded md:h-96" />
             </div>
           </div>
         </div>
