@@ -7,10 +7,6 @@ module.exports = {
       fontFamily: {
         roboto: ['Roboto'],
       },
-      // gradientColorStops: theme => ({
-      //   'purple-1': "#cc2b5e",
-      //   'purple-2': "#753a88"
-      // }),
       colors: {
         'primary-theme-color': "#1c1b1c",
         'white': "#EFEBE0",
