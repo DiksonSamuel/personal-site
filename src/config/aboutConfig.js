@@ -4,7 +4,7 @@ const AboutConfig = [
   {key: "Experience", value: "7 years"},
   {key: "Loves", value: "Cricket, Badminton, Football"},
   {key: "Super power", value: "Master of Office Coffee Brewing"},
-  {key: "Spirit aminal", value: "Cheetah"},
+  {key: "Spirit animal", value: "Cheetah"},
 ]
 
 export default AboutConfig;

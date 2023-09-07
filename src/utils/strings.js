@@ -5,7 +5,7 @@ const Strings = {
   introLine1: "Hello, \nI’m Dikson Samuel. \n\nI’m a Mobile/Web developer.",
   introLine2: "I’m a mobile/web developer.",
   introPara1: "I possess seven years of experience in mobile and web development.",
-  introPara2: "I prioritize clarity, empathy, and integrity above everything else. These principles shape my problem-solving approach and my perspective on life.",
+  introPara2: "My approach to life and problem-solving centers on clarity, empathy, and integrity as my guiding principles, ensuring meaningful and ethical actions in every endeavor.",
   name: "Dikson Samuel",
   emailId: "diksonsamuel11@gmail.com",
   number: "+91 9790756025",
