@@ -6,7 +6,7 @@ import Redirects from "../config/redirects";
 const Contact = () => {
   return (
     <div className="w-full flex justify-center md:justify-between items-center h-64 bg-gradient-to-r from-purple-1 to-purple-2 min-w-screen relative">
-      <img className="hidden md:block h-[220px] w-[220px] ml-20" src={require('../assets/dotted.png')} />
+      <img alt="dotted" className="hidden md:block h-[220px] w-[220px] ml-20" src={require('../assets/dotted.png')} />
       <div className="mr-0 md:mr-20">
         <h2 className="text-white font-roboto text-[40px] font-bold">{Strings.name}</h2>
         <div className="text-white flex-row flex text-base items-center font-roboto mt-[0px]">
