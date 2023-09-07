@@ -5,7 +5,7 @@ import RouterPath from './path';
 
 const MainRouter = () => {
   return (
-    <Router basename='/personal-site'>
+    <Router basename='/'>
       <Routes>
         <Route exact path={RouterPath.landing} element={<Landing />} />
         <Route exact path={RouterPath.about} element={<About />} />
