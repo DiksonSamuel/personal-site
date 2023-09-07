@@ -18,19 +18,19 @@ const Contact = () => {
           <p className="ml-2.5">{Strings.number}</p>
         </div>
         <div className="text-white text-sm my-[10px]">
-          <a href={Redirects.linkedin} target="_blank" className="pr-[24px]">
+          <a href={Redirects.linkedin} target="_blank" className="pr-[24px]" rel="noopener">
             <LinkedIn />
           </a>
-          <a href={Redirects.twitter} target="_blank" className="pr-[24px]">
+          <a href={Redirects.twitter} target="_blank" className="pr-[24px]" rel="noopener">
             <Twitter />
           </a>
-          <a href={Redirects.github} target="_blank" className="pr-[24px]">
+          <a href={Redirects.github} target="_blank" className="pr-[24px]" rel="noopener">
             <GitHub />
           </a>
-          <a href={Redirects.instagram} target="_blank" className="pr-[24px]">
+          <a href={Redirects.instagram} target="_blank" className="pr-[24px]" rel="noopener">
             <Instagram />
           </a>
-          <a href={Redirects.facebook} target="_blank" className="pr-[24px]">
+          <a href={Redirects.facebook} target="_blank" className="pr-[24px]" rel="noopener">
             <Facebook />
           </a>
         </div>
