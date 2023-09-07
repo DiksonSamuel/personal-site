@@ -2,8 +2,7 @@ import React from "react";
 import Strings from "../utils/strings";
 import Typewriter from 'typewriter-effect';
 import Lottie from "lottie-react";
-import IntroAnime from '../lottie/introAnime.lottie';
-import IntroAnime2 from '../lottie/animation_lm9bqz2f.json';
+import IntroAnime from '../lottie/introAnime.json';
 
 const Intro = () => {
   return (
@@ -24,8 +23,8 @@ const Intro = () => {
           {Strings.introPara2}
         </div>
       </div>
-      <div className="hidden md:block">
-        <Lottie  animationData={IntroAnime2} />;
+      <div className="hidden md:block flex-1">
+        <Lottie className="h-[500px] w-[500px]"  animationData={IntroAnime} />;
       </div>
      
     </div>
