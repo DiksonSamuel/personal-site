@@ -12,7 +12,8 @@ module.exports = {
         'white': "#EFEBE0",
         'gray-border': '#D9DDDC',
         'purple-1': "#cc2b5e",
-        'purple-2': "#753a88"
+        'purple-2': "#753a88",
+        'normal-white': '#FFFFFF'
       },
 
     },
