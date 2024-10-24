@@ -3,17 +3,13 @@ import { Document, Page } from 'react-pdf';
 import { pdfjs } from 'react-pdf';
 import Header from "../components/header";
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url,
-).toString();
-
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 const Resume = () => {
   return (
     <div className="flex flex-col flex-1 bg-gradient-to-r from-purple-1 to-purple-2 min-h-screen">
       <Header />
       <div className="flex flex-col flex-1 items-center justify-center p-4">
-        <Document file="/DiksonSamuelResume2024.pdf">
+        <Document file={`/DiksonSamuelResume2024.pdf`}>
           <Page
             renderMode="canvas"
             pageNumber={1}
